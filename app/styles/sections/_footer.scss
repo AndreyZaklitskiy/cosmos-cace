@@ -1,0 +1,194 @@
+footer {
+  position: relative;
+  .container {
+    background-image: url(../../images/space-footer.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 1000px;
+  }
+}
+
+.order {
+  @extend .col-xl-11;
+  position: relative;
+  height: 370px;
+
+}
+
+.order-form {
+  //padding-left: 35px;
+  //padding-right: 35px;
+
+
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 7px 16px 0px rgba(1, 1, 1, 0.43);
+
+  input[type="radio"] {
+    display: none;
+  }
+  label.radio {
+    display:inline-block;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border: 4px solid #ffffff;
+    box-shadow: inset 4px 2px 4px rgba(1, 1, 1, 0.43);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  input[type="radio"]:checked + label.radio {
+    background-color: $purple;
+  }
+  input[type="text"] {
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.4;
+    box-shadow: inset 4px 3px 5px 0px rgba(1, 1, 1, 0.67);
+  }
+  h4 {
+    padding-bottom: 12px;
+  }
+  textarea {
+      border-radius: 12px;
+      background-color: rgb(255, 255, 255);
+      opacity: 0.4;
+      box-shadow: inset 0px 2px 4px 0px rgba(1, 1, 1, 0.67);
+  }
+}
+
+//Оформление заказа
+.order-type {
+  position: absolute;
+  top: -75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+
+  h2 {
+    display: inline-block;
+    font-family: $robotolight;
+    color: #544759;
+  }
+  input[type="radio"]:checked + label {
+    border: 2px solid rgb(253, 125, 215);
+    border-radius: 5px;
+  }
+}
+.order-button {
+  margin: auto 23px;
+  display: inline-block;
+  padding: 8px 23px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $robotomedium;
+  font-size: 14px;
+  color: #544759;
+  cursor: pointer;
+}
+
+//стилизация айтемов формы
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  width: auto;
+  label {
+    margin-right: 10px;
+  }
+  p {
+    letter-spacing: 0;
+    font-family: $robotolight;
+    font-size: 14px;
+    display: inline-block;
+    color: #ffffff;
+  }
+}
+
+
+//order-cupcake
+
+.order-cupcake {
+  display: flex;
+
+}
+.order-left-block {
+  position: relative;
+
+  .quantity {
+    display: inline-block;
+    min-width: 134px;
+    margin-right: 10px;
+    height: auto;
+
+    .number {
+      border-radius: 4px;
+      padding: 0 5px;
+      height: 30px;
+    }
+  }
+
+  .packages {
+    display: inline-block;
+    //min-width: 170px;
+  }
+  .package {
+    @extend .order-item;
+  }
+  .add-info {
+    width: 100%;
+    margin-bottom: 20px;
+    textarea {
+      //width: 333px;
+      width: 100%;
+      height: 97px;
+    }
+  }
+  .add-img {
+    h4 {
+      margin-bottom: 5px;
+    }
+    button {
+      padding: 9px 40px 12px;
+      background-color: #e17cd3;
+      border: none;
+      color: $white;
+      box-shadow: 0px 6px 5.76px 0.24px rgba(7, 7, 7, 0.16);
+      font-family: $robotoregular;
+      font-size: 12px;
+      text-transform: uppercase;
+
+    }
+  }
+}
+
+//стили ползунка
+
+
+
+.find-btn {
+   margin-right: 17px;
+ }
+
+.order-cupcake-compound {
+  margin-left: 30px;
+}
+
+.transcription {
+  font-family: $robotomedium;
+  font-size: 14px;
+  color: $white;
+  margin-bottom: 10px;
+}
+
+.dough-list {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.filling-list {
+  display: inline-block;
+}
+
+.decorating-list {
+  display: inline-block;
+}

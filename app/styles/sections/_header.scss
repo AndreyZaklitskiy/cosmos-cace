@@ -1,0 +1,232 @@
+header {
+  @extend .bg-styles;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../../images/space-environment.png) no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+}
+
+// стили шапки
+.header-menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 1px 13px 1px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 1px 13px 1px rgba(0,0,0,0.39);
+  box-shadow: 0px 1px 13px 1px rgba(0,0,0,0.39);
+  .logo {
+    height: 90px;
+    @extend .col-sm-2;
+    display: inline-flex;
+    align-items: center;
+    img {
+      display: inline-block;
+    }
+  }
+  nav {
+    @extend .offset-sm-3, .col-sm-7, .d-md-block;
+  }
+
+  .is-active-menu {
+    display: block;
+  }
+
+  // стили гамбургера
+  .hamburger {
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    display: none;
+  }
+  .hamburger-inner {
+    background-color: $white;
+    &:before {
+      background-color: $white;
+    }
+    &:after {
+      background-color: $white;
+    }
+  }
+  .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: $white;
+  }
+}
+
+.header-list {
+  li {
+    display: inline-block;
+    margin-right: 75px;
+    a {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: $robotobold;
+      color: $white;
+      display: inline-block;
+      height: 90px;
+      line-height: 90px;
+
+    }
+    &:last-child {
+      margin-right: 0;
+
+    }
+  }
+}
+
+// стили контента header
+.header-content {
+  padding-top: 90px;
+  z-index: 3;
+   padding-bottom: 120px;
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    background: url(../../images/сloud.png) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    max-height: 240px;
+    z-index: 0;
+  }
+  .contacts {
+    a {
+      display: inline-block;
+    }
+    i {
+      display: inline-block;
+      font-size: 30px;
+    }
+
+  }
+  .contacts-list {
+    margin-top: 150px;
+  }
+  
+  .content {
+    @extend .offset-1, .col-md-6, .col-10;
+    margin-top: 150px;
+    h1 {
+      padding-bottom: 12px;
+    }
+    p {
+      font-size: 18px;
+      color: $white;
+      padding-bottom: 32px;
+    }
+  }
+}
+
+.iphone {
+  @extend .col-lg-3, .col-5;
+  position: relative;
+
+  img {
+    width: 120%;
+    height: auto;
+    margin-bottom: -150px;
+
+  }
+}
+
+
+
+
+
+
+//media
+@media (max-width: 1200px) {
+  header {
+    &:before {
+      background-repeat: repeat-y;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .iphone {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .header-content {
+    .content {
+    margin-top: 50px;
+    h1 {
+      font-size: 29px;
+    }
+  }
+  }
+  
+}
+
+
+@media (max-width: 767.9px) {
+  .header-menu {
+    nav {
+      width: 300px;
+      top: 90px;
+      right: 10px;
+      background: #8ba5f2;
+      position: absolute;
+      z-index: 5;
+      display: none;
+      ul li {
+        display: block;
+        a {
+          border-bottom: 1px solid $white;
+          width: 270px;
+
+        }
+        &:last-child {
+          a {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+
+  .header-content {
+    .contacts-list {
+      margin-top: 50px;
+    }
+    .iphone {
+      display: none;
+    }
+    .content {
+      margin-top: 25px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header-content {
+    .content {
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  }
+}
