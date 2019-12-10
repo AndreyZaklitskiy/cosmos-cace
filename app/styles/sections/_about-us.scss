@@ -13,10 +13,12 @@
     &:before {
       @extend .bafter, .arc;
       background-image: url(../../images/white-elips.png);
+      height: 106px;
+      width: 100%;
     }
     &:after {
       @extend .bafter;
-      top: 0;
+      top: 9px;
       right: 50%;
       transform: translate(50%, -50%);
       background-image: url(../../images/about/ufo.png);
@@ -26,13 +28,12 @@
       height: 73px;
       z-index: 3;
     }
-    
     }
   }
 
-//блок с ёблами
+
 .about-block {
-  @extend .col-12, .col-md-11;
+  @extend .col-12, .col-lg-11;
   position: relative;
   background-image: url(../../images/about/cosmos.png);
   -webkit-background-size: cover;
@@ -60,33 +61,103 @@
 }
 
 .about-item {
+  position: relative;
   display: flex;
   align-items: center;
   width: 50%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 40px 0;
   p {
     font-size: 18px;
     width: 230px;
     display: inline-block;
     color: $white;
   }
-  img {
-    display: inline-block;
+  
+  &:nth-child(1):before {
+      content: '';
+      display: inline-block;
+      background-image: url(../../images/about/creative-cyclop.png);
+      width: 90px;
+      height: 90px;
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position : center;
+      position: absolute;
+      right: 60px;
   }
+  &:nth-child(2):before {
+    content: '';
+    display: inline-block;
+    background-image: url(../../images/about/head.png);
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position : center;
+    position: absolute;
+    left: 65px;
+  }
+&:nth-child(3):before {
+  content: '';
+  display: inline-block;
+  background-image: url(../../images/about/morty.png);
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position : center;
+  position: absolute;
+  right: 125px;
+}
+&:nth-child(4):before {
+  content: '';
+  display: inline-block;
+  background-image: url(../../images/about/robot.png);
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position : center;
+  position: absolute;
+  left: 115px;
+}
+  &:nth-child(5):before {
+    content: '';
+    display: inline-block;
+    background-image: url(../../images/about/rick.png);
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position : center;
+    position: absolute;
+    right: 60px;
+}
+  &:nth-child(6):before {
+    content: '';
+    display: inline-block;
+    background-image: url(../../images/about/cosmonaut.png);
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position : center;
+    position: absolute;
+    left: 65px;
+}
+
   &:nth-child(1),&:nth-child(3), &:nth-child(5) {
     padding-right: 65px;
     p {
       margin-left: auto;
-      padding-right: 25px;
+      margin-right: 115px;
     }
-
   }
   &:nth-child(2),&:nth-child(4), &:nth-child(6) {
     padding-left: 65px;
     p {
       margin-right: auto;
-      padding-left: 25px;
+      margin-left: 115px;
     }
   }
   &:nth-child(3)  {
@@ -99,36 +170,71 @@
 
 
 
+
+// media
+@media (max-width: 1200px) {
+  .about-item {
+    p {
+
+    }
+    &::nth-child(3) {
+      padding-right: 110px;
+    }
+    &:nth-child(3)::before {
+      right: 110px;
+    }
+    &::nth-child(4) {
+      margin-left: 100px;
+    }
+    &:nth-child(1),&:nth-child(3), &:nth-child(5) {
+      p {
+        margin-right: 100px;
+      }
+    }
+    &:nth-child(2),&:nth-child(4), &:nth-child(6) {
+      p {
+        margin-left: 100px;
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .about-block {
     &:before {
-      display: none;
+      // display: none;
+      width: 100px;
+    height: 100px;
     }
   }
   .about-item {
     p {
       font-size: 14px;
     }
+    &:nth-child()::before {
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+    }
     &:nth-child(1),&:nth-child(3), &:nth-child(5) {
       padding-right: 15px;
       p {
         margin-left: auto;
-        padding-right: 25px;
+        margin-right: 25px;
       }
     }
     &:nth-child(2),&:nth-child(4), &:nth-child(6) {
-      padding-left: 15px;
+      
       margin-right: auto;
       p {
-
-        padding-left: 25px;
+        margin-left: 25px;
       }
     }
     &:nth-child(3)  {
-      padding-right: 15px;
+      padding-right: 85px;
     }
     &:nth-child(4) {
-      padding-left: 15px;
+      padding-left: 85px;
     }
 
   }

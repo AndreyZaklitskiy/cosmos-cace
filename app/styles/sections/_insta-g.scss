@@ -8,16 +8,17 @@
     &:before {
       @extend .bafter, .arc;
       background-image: url(../../images/violet-elips.png);
-      height: 106px;
+      height: 125px;
+      width: 95%;
     }
     &:after {
       @extend .bafter;
-      top: 69px;
+      top: 82px;
       right: 50%;
       transform: translate(50%, -50%);
       background-image: url(../../images/moonRover.png);
       background-repeat: no-repeat;
-      background-size: auto auto;
+      background-size: 100%;
       width: 83px;
       height: 73px;
       z-index: 3;
@@ -124,7 +125,16 @@
 
 //media
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+  .insta-g .container::after {
+    top: 63px;
+  }
+}
+
+@media (max-width: 991.9px) {
+  .insta-g .container::after {
+    top: 38px;
+  }
 
   .gallery {
     width: 100%;
@@ -146,7 +156,18 @@
   }
 }
 
+@media (max-width : 767.9px) {
+  .insta-g .container::after {
+    top: 23px;
+  }
+}
+
 @media (max-width: 480px) {
+
+  .insta-g .container::after {
+    top: 13px;
+  }
+
   .col-example {
     margin-bottom: 36px;
   }
@@ -163,4 +184,10 @@
     }
   }
 
+}
+
+@media (max-width : 320px) {
+  .insta-g .container::after {
+    top: -4px;
+  }
 }
