@@ -2,8 +2,29 @@
   padding-top: 20px;
   position: relative;
   z-index: 3;
-
-
+  .container {
+    position: relative;
+     &:before {
+    @extend .bafter, .arc;
+    background-image: url(../../images/white-elips.png);
+    height: 106px;
+    width: 100%;
+    bottom: -106px;
+  }
+  &:after {
+    @extend .bafter;
+    bottom: -80px;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-image: url(../../images/about/ufo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 83px;
+    height: 73px;
+    z-index: 3;
+  }
+  }
+ 
 }
 
 .cake-prices {
@@ -145,6 +166,16 @@
       width: 100%;
       .price {
         margin-top: 275px;
+      }
+    }
+  }
+}
+
+@media (max-width : 768px) {
+  .prices {
+    .container {
+      &::after {
+        bottom: -65px;
       }
     }
   }

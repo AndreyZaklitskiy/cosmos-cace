@@ -149,7 +149,6 @@ p {
 .arc {
   background-size: 100%;
   background-repeat: no-repeat;
-  top: 0;
 
 }
 
@@ -168,7 +167,9 @@ p {
 }
 
 @media (max-width : 480px) {
-  
+  .arc {
+    width: 90%;
+  }
   .contacts-list {
     li {
       margin: 10px 5px;
