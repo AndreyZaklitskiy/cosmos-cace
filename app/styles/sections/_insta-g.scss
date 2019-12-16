@@ -1,6 +1,5 @@
 .insta-g {
   position: relative;
-
   .container {
     padding-top: 130px;
     padding-bottom: 70px;
@@ -26,18 +25,6 @@
     }
   }
 }
-//луноход
-.moonRover {
-  position: absolute;
-  top: 1px;
-  right: 50%;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
 .gallery-styles {
   position: relative;
   height: 260px;
