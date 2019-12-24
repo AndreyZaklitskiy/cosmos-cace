@@ -25,46 +25,33 @@
     }
   }
 }
-.gallery-styles {
-  position: relative;
-  height: 260px;
-  margin-bottom: 36px;
-  .block {
-    @extend .offset-lg-3, .offset-sm-4;
-  }
-}
-  .example {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
 
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-
-.col-example {
-  @extend .col-lg-3, .col-sm-4, .col-12;
-  height: 260px;
+.gallery {
+  @extend .col-lg-11, .col-12;
 }
 
 .gallery-string {
-  @extend .row, .gallery-styles;
-  &:nth-child(2) {
-    .more-photos-wrap {
-      left: 65px;
-    }
-    .more-photos {
-      left: 0;
-    }
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
+}
+.col-example {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 255px;
+  height: 250px;
+  overflow: hidden;
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+  &:nth-child(3) {
+    margin-right: 0;
   }
 }
 
 .more-photos-wrap {
   height: 210px;
-  width: 90%;
+  width: 96%;
   box-shadow: 0px 5px 13px 0px rgba(7, 7, 7, 0.45);
   background-color: transparent;
   position: absolute;
@@ -74,12 +61,13 @@
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 65px;
+  right: 2%;
+  z-index: 2;
 }
 .more-photos {
   position: absolute;
   right: 0;
-  width: 200px;
+  width: 190px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -109,6 +97,28 @@
   }
 }
 
+.gallery-line {
+  position: relative;
+}
+
+.swiper-container {
+  width: 80%;
+  margin-bottom: 40px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.swiper-slide {
+  width: 255px;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  img {
+
+  }
+}
+
+
+
 
 
 //media
@@ -117,13 +127,23 @@
   .insta-g .container::after {
     top: 63px;
   }
+
+  .swiper-container {
+    width: 76%;
+}
+
+  .swiper-slide {
+    width: 240px;
+    height: 235px;
+  }
+
+
 }
 
 @media (max-width: 991.9px) {
   .insta-g .container::after {
     top: 38px;
   }
-
   .gallery {
     width: 100%;
   }
@@ -133,7 +153,6 @@
   .more-photos-wrap {
     width: 90%;
     right: 20px;
-
   }
   .gallery-string {
     &:nth-child(2) {
@@ -151,11 +170,9 @@
 }
 
 @media (max-width: 480px) {
-
   .insta-g .container::after {
     top: 13px;
   }
-
   .col-example {
     margin-bottom: 36px;
   }
