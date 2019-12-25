@@ -2,13 +2,15 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
 @import "../../node_modules/jquery-ui-slider/jquery-ui.min.css";
-@import "../../node_modules//slick-carousel/slick/slick.scss";
-@import "../../node_modules//slick-carousel/slick/slick-theme.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 
-@import "../../node_modules//swiper/swiper.scss";
-/*
-@import "../../node_modules/font-awesome/scss/font-awesome";
-*/
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+
 // modules & sections
 @import "modules/sprite";
 @import "functions";
@@ -141,7 +143,7 @@ p {
   }
 }
 
-// before/after 
+// before/after
 .bafter {
   content: '';
   display: inline-block;

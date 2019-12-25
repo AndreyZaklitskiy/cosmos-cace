@@ -2,17 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a2957cc-0782-4495-b08c-a12ffd914290" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/scripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sections/_about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_about-us.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sections/_insta-g.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_insta-g.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileColors">
     <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
@@ -24,32 +64,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/AndreyZaklitskiy/cosmos-cace.git" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1UZox3r88Rr3JQ5WYU6lGvL2OsG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../LIAN" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/fonts" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tony_\Desktop\cosmos-cace\app\fonts" />
+      <recent name="C:\Users\tony_\Desktop\cosmos-cace\app" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gulp.js.serve">
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -70,14 +121,48 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Gulp.js.serve" />
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\tony_\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -89,6 +174,7 @@
       <workItem from="1575573723695" duration="1034000" />
       <workItem from="1576485478550" duration="222000" />
       <workItem from="1577191786936" duration="719000" />
+      <workItem from="1577280193794" duration="11302000" />
     </task>
     <servers />
   </component>
@@ -107,5 +193,46 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1048" y="211" key="#ESLint" timestamp="1577291212291">
+      <screen x="-1280" y="55" width="1280" height="994" />
+    </state>
+    <state x="-1048" y="211" key="#ESLint/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577291212291" />
+    <state width="1237" height="255" key="GridCell.Tab.0.bottom" timestamp="1577286238489">
+      <screen x="-1280" y="55" width="1280" height="994" />
+    </state>
+    <state width="1237" height="255" key="GridCell.Tab.0.bottom/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286238489" />
+    <state width="1237" height="255" key="GridCell.Tab.0.center" timestamp="1577286238489">
+      <screen x="-1280" y="55" width="1280" height="994" />
+    </state>
+    <state width="1237" height="255" key="GridCell.Tab.0.center/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286238489" />
+    <state width="1237" height="255" key="GridCell.Tab.0.left" timestamp="1577286238489">
+      <screen x="-1280" y="55" width="1280" height="994" />
+    </state>
+    <state width="1237" height="255" key="GridCell.Tab.0.left/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286238489" />
+    <state width="1237" height="255" key="GridCell.Tab.0.right" timestamp="1577286238489">
+      <screen x="-1280" y="55" width="1280" height="994" />
+    </state>
+    <state width="1237" height="255" key="GridCell.Tab.0.right/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286238489" />
+    <state x="-1139" y="195" key="SettingsEditor" timestamp="1577291983071">
+      <screen x="-1280" y="55" width="1280" height="994" />
+    </state>
+    <state x="-1139" y="195" key="SettingsEditor/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577291983071" />
+    <state x="-954" y="268" width="627" height="568" key="find.popup" timestamp="1577286072682">
+      <screen x="-1280" y="55" width="1280" height="994" />
+    </state>
+    <state x="-954" y="268" width="627" height="568" key="find.popup/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286072682" />
+    <state x="-984" y="256" key="run.anything.popup" timestamp="1577290891523">
+      <screen x="-1280" y="55" width="1280" height="994" />
+    </state>
+    <state x="-984" y="256" key="run.anything.popup/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577290891523" />
+    <state x="-977" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1577291580709">
+      <screen x="-1280" y="55" width="1280" height="994" />
+    </state>
+    <state x="-977" y="268" width="672" height="678" key="search.everywhere.popup/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577291580709" />
   </component>
 </project>

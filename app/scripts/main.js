@@ -1,49 +1,42 @@
+let cosmosCake = {
+  init() {
 
-$(document).ready(function() {
-$('.hamburger').on('click', function (event) {
-  $(this).toggleClass('is-active');
-  $('.header-menu_nav').slideToggle().toggleClass('is-active-menu');
-});
+    // hamburger init function
+    this.hamburgerInitFunc();
 
+    // swiper init function
+    this.swiperInitFunc();
 
-var mySwiper = new Swiper ('.swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 30,
-  autoplay: {
+  },
+
+  hamburgerInitFunc() {
+    $('.hamburger').on('click', function () {
+      $(this).toggleClass('is-active');
+      $('.header-menu_nav').slideToggle().toggleClass('is-active-menu');
+    });
+  },
+
+  swiperInitFunc() {
+    new Swiper ('.swiper-container', {
+      loop: true,
+      slidesPerView: 3,
+      simulateTouch: false,
+      spaceBetween: 30,
+      autoplay: {
         delay: 2500,
-        disableOnInteraction: false,
+        disableOnInteraction: false
       },
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    992: {
-      slidesPerView: 3,
-      spaceBetween: 30
-    }
-  }
-
-
-})
-
-
-});
-
-
-
-// $('.gallery-slider').slick({
-//   infinite: true,
-//   slidesToShow: 3,
-//   slidesToScroll: 0
-// });
+      breakpoints: {
+        320: {
+          slidesPerView: 1
+        },
+        767: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 3
+        }
+      }
+    })
+  },
+}.init();
