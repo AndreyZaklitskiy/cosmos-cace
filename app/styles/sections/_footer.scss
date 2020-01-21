@@ -1,97 +1,90 @@
 footer {
   position: relative;
   .container {
-    background-image: url(../../images/space-footer.png);
+    // background-image: url(../../images/space-footer.png);
     -webkit-background-size: cover;
     background-size: cover;
-    height: 1000px;
+    padding-bottom: 100px;
   }
 }
+// .order {
+//   @extend .col-xl-11;
+//   position: relative;
+//   height: 370px;
+// }
+// .order-form {
+//   //padding-left: 35px;
+//   //padding-right: 35px;
+//   background-color: rgba(255, 255, 255, 0);
+//   box-shadow: 0px 7px 16px 0px rgba(1, 1, 1, 0.43);
+//   input[type="radio"] {
+//     display: none;
+//   }
+//   label.radio {
+//     display:inline-block;
+//     border-radius: 50%;
+//     height: 22px;
+//     width: 22px;
+//     border: 4px solid #ffffff;
+//     box-shadow: inset 4px 2px 4px rgba(1, 1, 1, 0.43);
+//     background-color: rgba(255, 255, 255, 1);
+//   }
+//   input[type="radio"]:checked + label.radio {
+//     background-color: $purple;
+//   }
+//   input[type="text"] {
+//     border-radius: 12px;
+//     background-color: rgb(255, 255, 255);
+//     opacity: 0.4;
+//     box-shadow: inset 4px 3px 5px 0px rgba(1, 1, 1, 0.67);
+//   }
+//   h4 {
+//     padding-bottom: 12px;
+//   }
+//   textarea {
+//       border-radius: 12px;
+//       background-color: rgb(255, 255, 255);
+//       opacity: 0.4;
+//       box-shadow: inset 0px 2px 4px 0px rgba(1, 1, 1, 0.67);
+//   }
+// }
 
-.order {
-  @extend .col-xl-11;
-  position: relative;
-  height: 370px;
+            //Оформление заказа
+// .order-type {
+//   position: absolute;
+//   top: -75px;
+//   height: 75px;
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 35px;
 
-}
+//   h2 {
+//     display: inline-block;
+//     font-family: $robotolight;
+//     color: #544759;
+//   }
+//   input[type="radio"]:checked + label {
+//     border: 2px solid rgb(253, 125, 215);
+//     border-radius: 5px;
+//   }
+// }
+// .order-button {
+//   margin: auto 23px;
+//   display: inline-block;
+//   padding: 8px 23px;
+//   text-align: center;
+//   text-transform: uppercase;
+//   font-family: $robotomedium;
+//   font-size: 14px;
+//   color: #544759;
+//   cursor: pointer;
+// }
 
-.order-form {
-  //padding-left: 35px;
-  //padding-right: 35px;
-
-
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: 0px 7px 16px 0px rgba(1, 1, 1, 0.43);
-
-  input[type="radio"] {
-    display: none;
-  }
-  label.radio {
-    display:inline-block;
-    border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    border: 4px solid #ffffff;
-    box-shadow: inset 4px 2px 4px rgba(1, 1, 1, 0.43);
-    background-color: rgba(255, 255, 255, 1);
-  }
-  input[type="radio"]:checked + label.radio {
-    background-color: $purple;
-  }
-  input[type="text"] {
-    border-radius: 12px;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.4;
-    box-shadow: inset 4px 3px 5px 0px rgba(1, 1, 1, 0.67);
-  }
-  h4 {
-    padding-bottom: 12px;
-  }
-  textarea {
-      border-radius: 12px;
-      background-color: rgb(255, 255, 255);
-      opacity: 0.4;
-      box-shadow: inset 0px 2px 4px 0px rgba(1, 1, 1, 0.67);
-  }
-}
-
-//Оформление заказа
-.order-type {
-  position: absolute;
-  top: -75px;
-  height: 75px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 35px;
-
-  h2 {
-    display: inline-block;
-    font-family: $robotolight;
-    color: #544759;
-  }
-  input[type="radio"]:checked + label {
-    border: 2px solid rgb(253, 125, 215);
-    border-radius: 5px;
-  }
-}
-.order-button {
-  margin: auto 23px;
-  display: inline-block;
-  padding: 8px 23px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: $robotomedium;
-  font-size: 14px;
-  color: #544759;
-  cursor: pointer;
-}
-
-//стилизация айтемов формы
+            //стилизация айтемов формы
 
 .order-item {
   display: flex;
   align-items: center;
-  padding: 4px 0;
   width: auto;
   label {
     margin-right: 10px;
@@ -162,9 +155,7 @@ footer {
   }
 }
 
-//стили ползунка
-
-
+          //стили ползунка
 
 .find-btn {
    margin-right: 17px;
@@ -191,4 +182,261 @@ footer {
 
 .decorating-list {
   display: inline-block;
+}
+
+// .footer-form > div {
+//   padding: 15px;
+// }
+
+              // ВОНО
+
+.footer-form-block {
+  @extend .col-xl-11, .col-12;
+  box-shadow: 0px 7px 16px 0px rgba(1, 1, 1, 0.43);
+  margin-top: -80px;
+              //Оформление заказа 
+  h2 {
+    display: inline-block;
+    font-family: $robotomedium;
+    color: $black;
+    font-weight: 300;
+  }
+  menu {
+    padding: 25px 20px 22px;
+    display: flex;
+  }
+}
+          //список форм 
+.footer-form-list {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  li {
+    display: block;
+    margin-right: 35px;
+    a {
+      display: block;
+      text-align: center;
+      font-family: $robotoregular;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 6px 23px;
+      color: #544759;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      &:hover {
+        border: 2px solid #fd7dd7;
+      }
+      &:active {
+        border: 2px solid #fd7dd7;
+      }
+      &.active {
+        border: 2px solid #fd7dd7;
+      }
+    }
+  }
+}
+          // обёртка для всех форм футера
+.footer-form-wrap {
+  padding: 35px 15px 30px;
+}
+
+
+            //общий класс для всех форм футера 
+.footer-form {
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-around;
+  ul li {
+    padding: 4px 0;
+}
+                // стилизация input type radio
+  input[type="radio"] {
+    display: none;
+  }
+  label.radio {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border: 4px solid #ffffff;
+    box-shadow: inset 4px 2px 4px rgba(1, 1, 1, 0.43);
+    background-color: rgba(255, 255, 255, 1);
+    letter-spacing: 0;
+    font-family: "RobotoLight", sans-serif;
+    font-size: 14px;
+    color:#ffffff;
+    span {
+      padding-left: 30px;
+      width: auto;
+      white-space: pre;
+    }
+  }
+  input[type="radio"]:checked + label.radio {
+    background-color: $purple;
+  }
+            // стилизация input type text, email...
+  input[type="text"], input[type="mail"], textarea  {
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.4;
+    box-shadow: inset 4px 3px 5px 0px rgba(1, 1, 1, 0.67);
+    height: 30px;
+    padding: 5px;
+    color: #544759;
+    font-style: 14px;
+
+  }
+  textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 20px;
+  }
+            //заглавия в формах 
+  h4 {
+    padding-bottom: 12px;
+  }
+  
+
+}
+.cupcake-quantity-input {
+    width: 134px;
+}
+
+
+          // ...
+.cupcake-form {
+  position: relative;
+  display: grid;
+   grid-template-columns: 370px 310px 1fr ;//repeat(3, 1fr)
+  grid-gap: 30px;
+}
+
+.cupcake-left-wrap {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  .add-info {
+    grid-column: 1 / -1;
+  }
+  
+}
+
+.add-img {
+  grid-column: 1 / -1;
+  .btn {
+    padding: 10px 45px;
+    background-color: $purple;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: $robotoregular;
+    border: none;
+    box-shadow: 0px 6px 5.76px 0.24px rgba(1, 1, 1, 0.16);
+    margin-right: 17px;
+  }
+
+}
+
+
+.cupcake-center-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 36px 1fr 1fr 1fr;
+
+  // grid-template-areas: 
+  //   "h4-header h4-header"
+  //   "dough decorating"
+  //   "filling ."
+  // ;
+
+  h4 {
+    // grid-area: h4-header;
+    grid-column: 1 / -1;
+    grid-row:1;
+  }
+  .dough-list {
+    // grid-area: dough;
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+  .filling-list {
+    // grid-area: filling;
+    grid-column: 1;
+    grid-row: 3/5;
+  }
+  .decorating-list {
+    // grid-area: decorating;
+    grid-column: 2;
+    grid-row: 2/5;
+  }
+}
+
+
+.registration {
+  input[type="text"],input[type="mail"] {
+    margin-bottom: 28px;
+  }
+}
+
+.get-order {
+  ul>li {
+    display: inline-block;
+    &:last-child {
+      margin-left: 85px;
+    }
+  }
+}
+
+            // кнопка заказа
+.make-order {
+  position: absolute;
+  right: 20px;
+  bottom: -60px;
+  padding: 20px 60px;
+  font-size: 18px;
+  font-family: $robotoregular;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: $purple;
+  box-shadow: 10px 6px 18px 0px rgba(1,1,1,.75);
+
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+
+
+// media
+
+@media(max-width : 1200px) {
+  footer {
+    .contacts {
+    display: none;
+  }
+  }
+  .get-order {
+    ul>li {
+      display: block;
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media(max-width : 992px) {
+  footer {
+    .contacts {
+    display: none;
+  }
+  }
+  
 }
