@@ -7,12 +7,20 @@ let cosmosCake = {
     // swiper init function
     this.swiperInitFunc();
 
+    // footer input val function
+    this.iputValFunc();
   },
 
   hamburgerInitFunc() {
     $('.hamburger').on('click', function () {
       $(this).toggleClass('is-active');
       $('.header-menu_nav').slideToggle().toggleClass('is-active-menu');
+    });
+  },
+
+  iputValFunc() {
+    $(".input-range").on("input", function(){
+      $(".input-text").val(this.value);
     });
   },
 
