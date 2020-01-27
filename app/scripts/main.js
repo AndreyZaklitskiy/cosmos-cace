@@ -1,3 +1,12 @@
+$(document).ready(function() {
+  let hrefs = document.getElementsByTagName('a');
+  hrefs.addEventListener('click', function() {
+    event.preventDefault();
+  });
+  
+});
+
+
 let cosmosCake = {
   init() {
 
@@ -9,21 +18,15 @@ let cosmosCake = {
 
     // footer input val function
     this.iputValFunc();
-  },
 
+
+  },
   hamburgerInitFunc() {
     $('.hamburger').on('click', function () {
       $(this).toggleClass('is-active');
       $('.header-menu_nav').slideToggle().toggleClass('is-active-menu');
     });
   },
-
-  iputValFunc() {
-    $(".input-range").on("input", function(){
-      $(".input-text").val(this.value);
-    });
-  },
-
   swiperInitFunc() {
     new Swiper ('.swiper-container', {
       loop: true,
@@ -47,6 +50,19 @@ let cosmosCake = {
       }
     })
   },
+  iputValFunc() {
+    $(".input-range").on("input", function(){
+      $(".input-text").val(this.value);
+    });
+  },
+  chooseFormFunc() {
+    $('.footer-form-list>li>.cupcake').on('click', function() {
+      $(this).addClass('active').siblings.removeClass('active');
+      $('.cupcake-form').addClass('open').siblings.removeClass('open');
+    });
+    $('.footer-form-list>li>.cake').on('click', function() {
+      $(this).addClass('active').siblings.removeClass('active');
+      $('.cake-form').addClass('open').siblings.removeClass('open');
+    });
+  }
 }.init();
-
-

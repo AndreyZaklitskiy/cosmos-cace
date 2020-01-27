@@ -7,81 +7,7 @@ footer {
     padding-bottom: 100px;
   }
 }
-// .order {
-//   @extend .col-xl-11;
-//   position: relative;
-//   height: 370px;
-// }
-// .order-form {
-//   //padding-left: 35px;
-//   //padding-right: 35px;
-//   background-color: rgba(255, 255, 255, 0);
-//   box-shadow: 0px 7px 16px 0px rgba(1, 1, 1, 0.43);
-//   input[type="radio"] {
-//     display: none;
-//   }
-//   label.radio {
-//     display:inline-block;
-//     border-radius: 50%;
-//     height: 22px;
-//     width: 22px;
-//     border: 4px solid #ffffff;
-//     box-shadow: inset 4px 2px 4px rgba(1, 1, 1, 0.43);
-//     background-color: rgba(255, 255, 255, 1);
-//   }
-//   input[type="radio"]:checked + label.radio {
-//     background-color: $purple;
-//   }
-//   input[type="text"] {
-//     border-radius: 12px;
-//     background-color: rgb(255, 255, 255);
-//     opacity: 0.4;
-//     box-shadow: inset 4px 3px 5px 0px rgba(1, 1, 1, 0.67);
-//   }
-//   h4 {
-//     padding-bottom: 12px;
-//   }
-//   textarea {
-//       border-radius: 12px;
-//       background-color: rgb(255, 255, 255);
-//       opacity: 0.4;
-//       box-shadow: inset 0px 2px 4px 0px rgba(1, 1, 1, 0.67);
-//   }
-// }
-
-            //Оформление заказа
-// .order-type {
-//   position: absolute;
-//   top: -75px;
-//   height: 75px;
-//   display: flex;
-//   align-items: center;
-//   margin-bottom: 35px;
-
-//   h2 {
-//     display: inline-block;
-//     font-family: $robotolight;
-//     color: #544759;
-//   }
-//   input[type="radio"]:checked + label {
-//     border: 2px solid rgb(253, 125, 215);
-//     border-radius: 5px;
-//   }
-// }
-// .order-button {
-//   margin: auto 23px;
-//   display: inline-block;
-//   padding: 8px 23px;
-//   text-align: center;
-//   text-transform: uppercase;
-//   font-family: $robotomedium;
-//   font-size: 14px;
-//   color: #544759;
-//   cursor: pointer;
-// }
-
             //стилизация айтемов формы
-
 .order-item {
   display: flex;
   align-items: center;
@@ -97,30 +23,19 @@ footer {
     color: #ffffff;
   }
 }
-
-
-//order-cupcake
-
-.order-cupcake {
-  display: flex;
-
-}
 .order-left-block {
   position: relative;
-
   .quantity {
     display: inline-block;
     min-width: 134px;
     margin-right: 10px;
     height: auto;
-
     .number {
       border-radius: 4px;
       padding: 0 5px;
       height: 30px;
     }
   }
-
   .packages {
     display: inline-block;
     //min-width: 170px;
@@ -150,28 +65,22 @@ footer {
       font-family: $robotoregular;
       font-size: 12px;
       text-transform: uppercase;
-
     }
   }
 }
-
           //стили ползунка
-
 .find-btn {
    margin-right: 17px;
  }
-
-.order-cupcake-compound {
-  margin-left: 30px;
-}
-
+// .order-cupcake-compound {
+//   margin-left: 30px;
+// }
 .transcription {
   font-family: $robotomedium;
   font-size: 14px;
   color: $white;
   margin-bottom: 10px;
 }
-
 .dough-list {
   display: inline-block;
   margin-bottom: 30px;
@@ -179,17 +88,10 @@ footer {
 .filling-list {
   display: inline-block;
 }
-
 .decorating-list {
   display: inline-block;
 }
-
-// .footer-form > div {
-//   padding: 15px;
-// }
-
               // ВОНО
-
 .footer-form-block {
   @extend .col-xl-11, .col-12;
   box-shadow: 0px 7px 16px 0px rgba(1, 1, 1, 0.43);
@@ -242,13 +144,6 @@ footer {
 .footer-form-wrap {
   padding: 35px 15px 30px;
 }
-
-
-            //общий класс для всех форм футера 
-.footer-form {
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-around;
   ul li {
     padding: 4px 0;
 }
@@ -289,7 +184,6 @@ footer {
     padding: 5px;
     color: #544759;
     font-style: 14px;
-
   }
   textarea {
       width: 100%;
@@ -300,10 +194,8 @@ footer {
   h4 {
     padding-bottom: 12px;
   }
-  
 
-}
-.cupcake-quantity {
+.footer-form-quantity {
     width: 134px;
     .input-text {
       text-align: right;
@@ -313,12 +205,7 @@ footer {
 
     }
 
-
-
     // стилизация ползунка input type="range"
-
-
-
 input[type=range] {
     -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
     width: 100%; /* Указание параметра ширины требуется для Firefox. */
@@ -408,20 +295,21 @@ input[type=range] {
       background-color: rgb(253, 125, 215);
     }
 }
-
-.cupcake-quantity-input {
+.quantity-input {
   width: 100%;
 }
-
-          // ...
-.cupcake-form {
+       //общий класс для всех форм футера 
+.footer-form {
   position: relative;
-  display: grid;
+  display: none;
    grid-template-columns: 370px 310px 1fr ;//repeat(3, 1fr)
   grid-gap: 30px;
 }
+.footer-form.open {
+  display: grid;
+}
 
-.cupcake-left-wrap {
+.footer-form-left-wrap {
   display: grid;
   grid-template-columns: 140px 1fr;
   grid-column-gap: 30px;
@@ -429,10 +317,8 @@ input[type=range] {
   .add-info {
     grid-column: 1 / -1;
   }
-  
 }
-
-.add-img {
+.footer-form-add-image {
   grid-column: 1 / -1;
   .btn {
     padding: 10px 45px;
@@ -445,50 +331,34 @@ input[type=range] {
     box-shadow: 0px 6px 5.76px 0.24px rgba(1, 1, 1, 0.16);
     margin-right: 17px;
   }
-
 }
-
-
-.cupcake-center-wrap {
+.footer-form-center-wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 36px 1fr 1fr 1fr;
-
-  // grid-template-areas: 
-  //   "h4-header h4-header"
-  //   "dough decorating"
-  //   "filling ."
-  // ;
+  // grid-template-rows: 36px 1fr 1fr 1fr;
 
   h4 {
-    // grid-area: h4-header;
     grid-column: 1 / -1;
     grid-row:1;
   }
   .dough-list {
-    // grid-area: dough;
     grid-column: 1;
     grid-row: 2/3;
   }
   .filling-list {
-    // grid-area: filling;
     grid-column: 1;
     grid-row: 3/5;
   }
   .decorating-list {
-    // grid-area: decorating;
     grid-column: 2;
     grid-row: 2/5;
   }
 }
-
-
 .registration {
   input[type="text"],input[type="mail"] {
     margin-bottom: 28px;
   }
 }
-
 .get-order {
   ul>li {
     display: inline-block;
@@ -497,7 +367,6 @@ input[type=range] {
     }
   }
 }
-
             // кнопка заказа
 .make-order {
   position: absolute;
@@ -510,7 +379,6 @@ input[type=range] {
   text-transform: uppercase;
   background-color: $purple;
   box-shadow: 10px 6px 18px 0px rgba(1,1,1,.75);
-
   border: none;
   border-radius: 4px;
 }
@@ -543,5 +411,4 @@ input[type=range] {
     display: none;
   }
   }
-  
 }
