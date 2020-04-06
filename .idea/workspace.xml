@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4a2957cc-0782-4495-b08c-a12ffd914290" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sections/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_footer.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +16,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileColors">
     <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
@@ -41,6 +58,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -114,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gulp.js.build" />
         <item itemvalue="Gulp.js.serve" />
+        <item itemvalue="Gulp.js.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
       </list>
@@ -148,6 +170,13 @@
       <workItem from="1577191786936" duration="719000" />
       <workItem from="1577280193794" duration="11302000" />
       <workItem from="1577361564541" duration="771000" />
+      <workItem from="1583687903919" duration="69000" />
+      <workItem from="1583688358413" duration="3000" />
+      <workItem from="1583688642057" duration="61000" />
+      <workItem from="1585672396921" duration="817000" />
+      <workItem from="1585757137314" duration="1448000" />
+      <workItem from="1586000185577" duration="776000" />
+      <workItem from="1586190346269" duration="7484000" />
     </task>
     <servers />
   </component>
@@ -171,50 +200,29 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1048" y="211" key="#ESLint" timestamp="1577291212291">
-      <screen x="-1280" y="55" width="1280" height="994" />
+    <state x="232" y="156" key="#Deployment" timestamp="1585672432615">
+      <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state x="-1048" y="211" key="#ESLint/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577291212291" />
-    <state x="378" y="316" key="FileChooserDialogImpl" timestamp="1577361686684">
-      <screen x="0" y="0" width="1280" height="984" />
+    <state x="232" y="156" key="#Deployment/0.0.1280.994@0.0.1280.994" timestamp="1585672432615" />
+    <state width="1237" height="190" key="GridCell.Tab.0.bottom" timestamp="1586190594571">
+      <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state x="378" y="316" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1577361686684" />
-    <state width="1237" height="279" key="GridCell.Tab.0.bottom" timestamp="1577362340074">
-      <screen x="0" y="0" width="1280" height="984" />
+    <state width="1237" height="190" key="GridCell.Tab.0.bottom/0.0.1280.994@0.0.1280.994" timestamp="1586190594571" />
+    <state width="1237" height="190" key="GridCell.Tab.0.center" timestamp="1586190594571">
+      <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.0.bottom/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286238489" />
-    <state width="1237" height="279" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1577362340073" />
-    <state width="1237" height="279" key="GridCell.Tab.0.center" timestamp="1577362340073">
-      <screen x="0" y="0" width="1280" height="984" />
+    <state width="1237" height="190" key="GridCell.Tab.0.center/0.0.1280.994@0.0.1280.994" timestamp="1586190594571" />
+    <state width="1237" height="190" key="GridCell.Tab.0.left" timestamp="1586190594570">
+      <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.0.center/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286238489" />
-    <state width="1237" height="279" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1577362340073" />
-    <state width="1237" height="279" key="GridCell.Tab.0.left" timestamp="1577362340073">
-      <screen x="0" y="0" width="1280" height="984" />
+    <state width="1237" height="190" key="GridCell.Tab.0.left/0.0.1280.994@0.0.1280.994" timestamp="1586190594570" />
+    <state width="1237" height="190" key="GridCell.Tab.0.right" timestamp="1586190594571">
+      <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.0.left/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286238489" />
-    <state width="1237" height="279" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1577362340073" />
-    <state width="1237" height="279" key="GridCell.Tab.0.right" timestamp="1577362340073">
-      <screen x="0" y="0" width="1280" height="984" />
+    <state width="1237" height="190" key="GridCell.Tab.0.right/0.0.1280.994@0.0.1280.994" timestamp="1586190594571" />
+    <state x="296" y="229" key="run.anything.popup" timestamp="1586199783411">
+      <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.0.right/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286238489" />
-    <state width="1237" height="279" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1577362340073" />
-    <state x="141" y="139" key="SettingsEditor" timestamp="1577361689425">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="-1139" y="195" key="SettingsEditor/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577291983071" />
-    <state x="141" y="139" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1577361689425" />
-    <state x="-954" y="268" width="627" height="568" key="find.popup" timestamp="1577286072682">
-      <screen x="-1280" y="55" width="1280" height="994" />
-    </state>
-    <state x="-954" y="268" width="627" height="568" key="find.popup/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577286072682" />
-    <state x="-984" y="256" key="run.anything.popup" timestamp="1577290891523">
-      <screen x="-1280" y="55" width="1280" height="994" />
-    </state>
-    <state x="-984" y="256" key="run.anything.popup/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577290891523" />
-    <state x="-977" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1577291580709">
-      <screen x="-1280" y="55" width="1280" height="994" />
-    </state>
-    <state x="-977" y="268" width="672" height="678" key="search.everywhere.popup/-1280.55.1280.994/0.0.1920.1050@-1280.55.1280.994" timestamp="1577291580709" />
+    <state x="296" y="229" key="run.anything.popup/0.0.1280.994@0.0.1280.994" timestamp="1586199783411" />
   </component>
 </project>

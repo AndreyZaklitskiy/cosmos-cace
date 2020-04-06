@@ -96,7 +96,7 @@ footer {
   @extend .col-xl-11, .col-12;
   box-shadow: 0px 7px 16px 0px rgba(1, 1, 1, 0.43);
   margin-top: -80px;
-              //Оформление заказа 
+              //Оформление заказа
   h2 {
     display: inline-block;
     font-family: $robotomedium;
@@ -108,7 +108,7 @@ footer {
     display: flex;
   }
 }
-          //список форм 
+          //список форм
 .footer-form-list {
   display: inline-flex;
   align-items: center;
@@ -190,7 +190,7 @@ footer {
       height: 100px;
       margin-bottom: 20px;
   }
-            //заглавия в формах 
+            //заглавия в формах
   h4 {
     padding-bottom: 12px;
   }
@@ -230,7 +230,7 @@ input[type=range] {
     background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
     border-color: transparent;
     color: transparent;
-  } 
+  }
   /* Тоже самое для Firefox */
   input[type=range]::-moz-range-thumb {
     width: 23px;
@@ -298,7 +298,7 @@ input[type=range] {
 .quantity-input {
   width: 100%;
 }
-       //общий класс для всех форм футера 
+       //общий класс для всех форм футера
 .footer-form {
   position: relative;
   display: none;
@@ -308,7 +308,6 @@ input[type=range] {
 .footer-form.open {
   display: grid;
 }
-
 .footer-form-left-wrap {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -362,8 +361,9 @@ input[type=range] {
 .get-order {
   ul>li {
     display: inline-block;
+    min-width: 115px;
     &:last-child {
-      margin-left: 85px;
+      //margin-left: 85px;
     }
   }
 }
@@ -384,6 +384,12 @@ input[type=range] {
 }
 
 
+.footer-form-right-wrap {
+  display: flex;
+  flex-direction: column;
+
+}
+
 
 
 
@@ -395,14 +401,15 @@ input[type=range] {
     display: none;
   }
   }
-  .get-order {
+  /*.get-order {
     ul>li {
       display: block;
       &:last-child {
-        margin-left: 0;
+        //margin-left: 0;
       }
     }
-  }
+  }*/
+
 }
 
 @media(max-width : 992px) {
@@ -410,5 +417,55 @@ input[type=range] {
     .contacts {
     display: none;
   }
+  }
+  .footer-form {
+    grid-template-columns: auto 290px 1fr;
+  }
+  .footer-form-left-wrap {
+    grid-template-columns: 1fr;
+  }
+  .footer-form-center-wrap .decorating-list {
+    grid-row: 2/150;
+  }
+
+  .cupcake-buttons {
+    button {
+      margin-bottom: 15px;
+    }
+  }
+
+//начинается
+  /*.footer-form {
+    grid-template-columns: 1.2fr 1fr;
+  }
+  .footer-form-right-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }*/
+
+}
+@media(max-width : 768px)  {
+  .footer-form {
+    grid-template-columns: 1fr;
+  }
+  /*.footer-form-center-wrap {
+    grid-template-columns: 1fr;
+  }
+  .footer-form-center-wrap .decorating-list {
+    grid-column: -1/1;
+    grid-row: auto;
+
+  }*/
+  .footer-form-left-wrap {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .footer-form-right-wrap {
+    margin-bottom: 15px;
+    input {
+      min-width: 100%;
+    }
   }
 }

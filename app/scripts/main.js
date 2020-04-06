@@ -1,8 +1,10 @@
+// const useref = require("gulp-useref");
+
 $(document).ready(function() {
-  let hrefs = document.getElementsByTagName('a');
-  hrefs.addEventListener('click', function() {
-    event.preventDefault();
-  });
+  // let hrefs = document.getElementsByTagName('a');
+  // hrefs.addEventListener('click', function() {
+  //   event.preventDefault();
+  // });
   
 });
 
@@ -51,8 +53,8 @@ let cosmosCake = {
     })
   },
   iputValFunc() {
-    $(".input-range").on("input", function(){
-      $(".input-text").val(this.value);
+    $('.input-range').on('input', function(){
+      $('.input-text').val(this.value);
     });
   },
   chooseFormFunc() {
