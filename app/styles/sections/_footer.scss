@@ -196,7 +196,7 @@ footer {
   }
 
 .footer-form-quantity {
-    width: 134px;
+    //width: 134px;
     .input-text {
       text-align: right;
       margin-bottom: 15px;
@@ -468,4 +468,11 @@ input[type=range] {
       min-width: 100%;
     }
   }
+  .footer-form-quantity {
+    width: auto;
+  }
+}
+
+@media (max-width: 400px) {
+
 }
