@@ -1,5 +1,6 @@
 footer {
   position: relative;
+
   .container {
     // background-image: url(../../images/space-footer.png);
     -webkit-background-size: cover;
@@ -7,14 +8,17 @@ footer {
     padding-bottom: 100px;
   }
 }
-            //стилизация айтемов формы
+
+//стилизация айтемов формы
 .order-item {
   display: flex;
   align-items: center;
   width: auto;
+
   label {
     margin-right: 10px;
   }
+
   p {
     letter-spacing: 0;
     font-family: $robotolight;
@@ -23,39 +27,48 @@ footer {
     color: #ffffff;
   }
 }
+
 .order-left-block {
   position: relative;
+
   .quantity {
     display: inline-block;
     min-width: 134px;
     margin-right: 10px;
     height: auto;
+
     .number {
       border-radius: 4px;
       padding: 0 5px;
       height: 30px;
     }
   }
+
   .packages {
     display: inline-block;
     //min-width: 170px;
   }
+
   .package {
     @extend .order-item;
   }
+
   .add-info {
     width: 100%;
     margin-bottom: 20px;
+
     textarea {
       //width: 333px;
       width: 100%;
       height: 97px;
     }
   }
+
   .add-img {
     h4 {
       margin-bottom: 5px;
     }
+
     button {
       padding: 9px 40px 12px;
       background-color: #e17cd3;
@@ -68,10 +81,12 @@ footer {
     }
   }
 }
-          //стили ползунка
+
+//стили ползунка
 .find-btn {
-   margin-right: 17px;
- }
+  margin-right: 17px;
+}
+
 // .order-cupcake-compound {
 //   margin-left: 30px;
 // }
@@ -81,43 +96,51 @@ footer {
   color: $white;
   margin-bottom: 10px;
 }
+
 .dough-list {
   display: inline-block;
   margin-bottom: 30px;
 }
+
 .filling-list {
   display: inline-block;
 }
+
 .decorating-list {
   display: inline-block;
 }
-              // ВОНО
+
+// ВОНО
 .footer-form-block {
   @extend .col-xl-11, .col-12;
   box-shadow: 0px 7px 16px 0px rgba(1, 1, 1, 0.43);
   margin-top: -80px;
-              //Оформление заказа
+  //Оформление заказа
   h2 {
     display: inline-block;
     font-family: $robotomedium;
     color: $black;
     font-weight: 300;
   }
+
   menu {
     padding: 25px 20px 22px;
     display: flex;
   }
 }
-          //список форм
+
+//список форм
 .footer-form-list {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+
   li {
     display: block;
     margin-right: 35px;
+
     a {
       display: block;
       text-align: center;
@@ -128,90 +151,104 @@ footer {
       color: #544759;
       border: 2px solid transparent;
       border-radius: 5px;
+
       &:hover {
         border: 2px solid #fd7dd7;
       }
+
       &:active {
         border: 2px solid #fd7dd7;
       }
+
       &.active {
         border: 2px solid #fd7dd7;
       }
     }
   }
 }
-          // обёртка для всех форм футера
+
+// обёртка для всех форм футера
 .footer-form-wrap {
   padding: 35px 15px 30px;
 }
-  ul li {
-    padding: 4px 0;
+
+ul li {
+  padding: 4px 0;
 }
-                // стилизация input type radio
-  input[type="radio"] {
-    display: none;
+
+// стилизация input type radio
+input[type="radio"] {
+  display: none;
+}
+
+label.radio {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  border: 4px solid #ffffff;
+  box-shadow: inset 4px 2px 4px rgba(1, 1, 1, 0.43);
+  background-color: rgba(255, 255, 255, 1);
+  letter-spacing: 0;
+  font-family: "RobotoLight", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+
+  span {
+    padding-left: 30px;
+    width: auto;
+    white-space: pre;
   }
-  label.radio {
-    display: flex;
-    align-items: center;
-    border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    border: 4px solid #ffffff;
-    box-shadow: inset 4px 2px 4px rgba(1, 1, 1, 0.43);
-    background-color: rgba(255, 255, 255, 1);
-    letter-spacing: 0;
-    font-family: "RobotoLight", sans-serif;
-    font-size: 14px;
-    color:#ffffff;
-    span {
-      padding-left: 30px;
-      width: auto;
-      white-space: pre;
-    }
-  }
-  input[type="radio"]:checked + label.radio {
-    background-color: $purple;
-  }
-            // стилизация input type text, email...
-  input[type="text"], input[type="mail"], textarea  {
-    border-radius: 4px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.4;
-    box-shadow: inset 4px 3px 5px 0px rgba(1, 1, 1, 0.67);
-    height: 30px;
-    padding: 5px;
-    color: #544759;
-    font-style: 14px;
-  }
-  textarea {
-      width: 100%;
-      height: 100px;
-      margin-bottom: 20px;
-  }
-            //заглавия в формах
-  h4 {
-    padding-bottom: 12px;
-  }
+}
+
+input[type="radio"]:checked + label.radio {
+  background-color: $purple;
+}
+
+// стилизация input type text, email...
+input[type="text"], input[type="mail"], textarea {
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.4;
+  box-shadow: inset 4px 3px 5px 0px rgba(1, 1, 1, 0.67);
+  height: 30px;
+  padding: 5px;
+  color: #544759;
+  font-style: 14px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+//заглавия в формах
+h4 {
+  padding-bottom: 12px;
+}
 
 .footer-form-quantity {
-    //width: 134px;
-    .input-text {
-      text-align: right;
-      margin-bottom: 15px;
-    }
-    .input-range {
+  //width: 134px;
+  .input-text {
+    text-align: right;
+    margin-bottom: 15px;
+  }
 
-    }
+  .input-range {
 
-    // стилизация ползунка input type="range"
-input[type=range] {
+  }
+
+  // стилизация ползунка input type="range"
+  input[type=range] {
     -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
     width: 100%; /* Указание параметра ширины требуется для Firefox. */
     // height: 7px;
     background-color: transparent;
   }
+
   /* Специальные правила для браузеров на движках WebKit/Blink */
   input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -221,9 +258,11 @@ input[type=range] {
     box-shadow: 0px 3px 6px 0px rgba(1, 1, 1, 0.43);
     border-radius: 50%;
   }
+
   input[type=range]:focus {
     outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
   }
+
   input[type=range]::-ms-track {
     width: 100%;
     cursor: pointer;
@@ -231,6 +270,7 @@ input[type=range] {
     border-color: transparent;
     color: transparent;
   }
+
   /* Тоже самое для Firefox */
   input[type=range]::-moz-range-thumb {
     width: 23px;
@@ -241,6 +281,7 @@ input[type=range] {
     cursor: pointer;
     outline: none;
   }
+
   input[type=range]::-moz-range-track {
     width: 100%;
     height: 7px;
@@ -249,6 +290,7 @@ input[type=range] {
     background-color: rgb(253, 125, 215);
     box-shadow: inset 0px 2px 4px 0px rgba(1, 1, 1, 0.39);
   }
+
   /* Тоже самое для IE */
   input[type=range]::-ms-thumb {
     width: 23px;
@@ -258,6 +300,7 @@ input[type=range] {
     border-radius: 50%;
     cursor: pointer;
   }
+
   input[type=range]::-ms-track {
     width: 100%;
     height: 7px;
@@ -267,58 +310,71 @@ input[type=range] {
     border-width: 16px 0;
     color: transparent;
   }
+
   input[type=range]::-ms-fill-lower {
     background-color: rgb(253, 125, 215);
     border-radius: 2px;
     box-shadow: inset 0px 2px 4px 0px rgba(1, 1, 1, 0.39);
   }
+
   input[type=range]:focus::-ms-fill-lower {
     background-color: rgb(253, 125, 215);
   }
+
   input[type=range]::-ms-fill-upper {
     background-color: rgb(253, 125, 215);
     border-radius: 2px;
     box-shadow: inset 0px 2px 4px 0px rgba(1, 1, 1, 0.39);
   }
+
   input[type=range]:focus::-ms-fill-upper {
     background-color: rgb(253, 125, 215);
   }
-    input[type=range]::-webkit-slider-runnable-track {
-      width: 100%;
-      height: 7px;
-      cursor: pointer;
-      border-radius: 2px;
-      background-color: rgb(253, 125, 215);
-      box-shadow: inset 0px 2px 4px 0px rgba(1, 1, 1, 0.39);
-    }
-    input[type=range]:focus::-webkit-slider-runnable-track {
-      background-color: rgb(253, 125, 215);
-    }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgb(253, 125, 215);
+    box-shadow: inset 0px 2px 4px 0px rgba(1, 1, 1, 0.39);
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background-color: rgb(253, 125, 215);
+  }
 }
+
 .quantity-input {
   width: 100%;
 }
-       //общий класс для всех форм футера
+
+//общий класс для всех форм футера
 .footer-form {
   position: relative;
   display: none;
-   grid-template-columns: 370px 310px 1fr ;//repeat(3, 1fr)
+  grid-template-columns: 370px 310px 1fr; //repeat(3, 1fr)
   grid-gap: 30px;
 }
+
 .footer-form.open {
   display: grid;
 }
+
 .footer-form-left-wrap {
   display: grid;
   grid-template-columns: 140px 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 20px;
+
   .add-info {
     grid-column: 1 / -1;
   }
 }
+
 .footer-form-add-image {
   grid-column: 1 / -1;
+
   .btn {
     padding: 10px 45px;
     background-color: $purple;
@@ -331,6 +387,7 @@ input[type=range] {
     margin-right: 17px;
   }
 }
+
 .footer-form-center-wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -338,36 +395,43 @@ input[type=range] {
 
   h4 {
     grid-column: 1 / -1;
-    grid-row:1;
+    grid-row: 1;
   }
+
   .dough-list {
     grid-column: 1;
     grid-row: 2/3;
   }
+
   .filling-list {
     grid-column: 1;
     grid-row: 3/5;
   }
+
   .decorating-list {
     grid-column: 2;
     grid-row: 2/5;
   }
 }
+
 .registration {
-  input[type="text"],input[type="mail"] {
+  input[type="text"], input[type="mail"] {
     margin-bottom: 28px;
   }
 }
+
 .get-order {
-  ul>li {
+  ul > li {
     display: inline-block;
     min-width: 115px;
+
     &:last-child {
       //margin-left: 85px;
     }
   }
 }
-            // кнопка заказа
+
+// кнопка заказа
 .make-order {
   position: absolute;
   right: 20px;
@@ -378,7 +442,7 @@ input[type=range] {
   color: #fff;
   text-transform: uppercase;
   background-color: $purple;
-  box-shadow: 10px 6px 18px 0px rgba(1,1,1,.75);
+  box-shadow: 10px 6px 18px 0px rgba(1, 1, 1, .75);
   border: none;
   border-radius: 4px;
 }
@@ -391,15 +455,34 @@ input[type=range] {
 }
 
 
+.cake-form {
+  .footer-form-center-wrap {
+    h4 {
+      grid-column: 1;
+    }
 
+    .decorating-list {
+      grid-row: 1/3;
+
+      p {
+        font-weight: 800;
+      }
+    }
+
+
+  }
+  .decorating-list__event {
+    grid-row: 4/5;
+  }
+}
 
 // media
 
-@media(max-width : 1200px) {
+@media(max-width: 1200px) {
   footer {
     .contacts {
-    display: none;
-  }
+      display: none;
+    }
   }
   /*.get-order {
     ul>li {
@@ -412,11 +495,11 @@ input[type=range] {
 
 }
 
-@media(max-width : 992px) {
+@media(max-width: 992px) {
   footer {
     .contacts {
-    display: none;
-  }
+      display: none;
+    }
   }
   .footer-form {
     grid-template-columns: auto 290px 1fr;
@@ -434,7 +517,7 @@ input[type=range] {
     }
   }
 
-//начинается
+  //начинается
   /*.footer-form {
     grid-template-columns: 1.2fr 1fr;
   }
@@ -444,9 +527,15 @@ input[type=range] {
     justify-content: space-between;
 
   }*/
+  .cake-form {
+    .decorating-list__event {
+      grid-row: 4/100;
+    }
+  }
 
 }
-@media(max-width : 768px)  {
+
+@media(max-width: 768px) {
   .footer-form {
     grid-template-columns: 1fr;
   }
@@ -464,12 +553,21 @@ input[type=range] {
 
   .footer-form-right-wrap {
     margin-bottom: 15px;
+
     input {
       min-width: 100%;
     }
   }
   .footer-form-quantity {
     width: auto;
+  }
+  .footer-form-center-wrap .decorating-list {
+    grid-row: 2/5;
+  }
+  .cake-form {
+    .decorating-list__event {
+      grid-row: 4/5;
+    }
   }
 }
 
