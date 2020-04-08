@@ -5,7 +5,10 @@ $(function() {
   // hrefs.addEventListener('click', function() {
   //   event.preventDefault();
   // });
+  /*$('a').addEventListener("click", function(event) {
 
+    event.preventDefault();
+  }, false);*/
 });
 
 
@@ -58,13 +61,21 @@ let cosmosCake = {
     });
   },
   chooseFormFunc() {
-    $('.footer-form-list>li>.cupcake').on('click', function() {
-      $(this).addClass('active').removeClass('active');
-      $('.cupcake-form').addClass('open').siblings.removeClass('open');
+    $('.footer-form-list>li').on('click', function() {
+      $(this).addClass('active').siblings(this).removeClass('active');
     });
-    $('.footer-form-list>li>.cake').on('click', function() {
-      $(this).addClass('active').siblings.removeClass('active');
-      $('.cake-form').addClass('open').siblings.removeClass('open');
+
+    $('.footer-form-list>.cupcake').on('click', function() {
+      $('.cupcake-form').addClass('open').siblings(this).removeClass('open');
+    });
+    $('.footer-form-list>.cake').on('click', function() {
+      $('.cake-form').addClass('open').siblings(this).removeClass('open');
+    });
+    $('.footer-form-list>.gift').on('click', function() {
+      $('.gift-form ').addClass('open').siblings(this).removeClass('open');
+    });
+    $('.footer-form-list>.individual').on('click', function() {
+      $('.individual-form').addClass('open').siblings(this).removeClass('open');
     });
   }
 }.init();

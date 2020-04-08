@@ -140,7 +140,6 @@ footer {
   li {
     display: block;
     margin-right: 35px;
-
     a {
       display: block;
       text-align: center;
@@ -156,13 +155,14 @@ footer {
         border: 2px solid #fd7dd7;
       }
 
-      &:active {
-        border: 2px solid #fd7dd7;
-      }
-
-      &.active {
-        border: 2px solid #fd7dd7;
-      }
+      //&:active {
+      //  border: 2px solid #fd7dd7;
+      //}
+    }
+  }
+  li.active {
+    a {
+      border: 2px solid #fd7dd7;
     }
   }
 }
