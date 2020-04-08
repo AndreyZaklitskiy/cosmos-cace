@@ -1,11 +1,11 @@
 // const useref = require("gulp-useref");
 
-$(document).ready(function() {
+$(function() {
   // let hrefs = document.getElementsByTagName('a');
   // hrefs.addEventListener('click', function() {
   //   event.preventDefault();
   // });
-  
+
 });
 
 
@@ -21,7 +21,7 @@ let cosmosCake = {
     // footer input val function
     this.iputValFunc();
 
-
+    this.chooseFormFunc();
   },
   hamburgerInitFunc() {
     $('.hamburger').on('click', function () {
@@ -59,7 +59,7 @@ let cosmosCake = {
   },
   chooseFormFunc() {
     $('.footer-form-list>li>.cupcake').on('click', function() {
-      $(this).addClass('active').siblings.removeClass('active');
+      $(this).addClass('active').removeClass('active');
       $('.cupcake-form').addClass('open').siblings.removeClass('open');
     });
     $('.footer-form-list>li>.cake').on('click', function() {

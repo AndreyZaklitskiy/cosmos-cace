@@ -476,6 +476,17 @@ h4 {
   }
 }
 
+.individual-form {
+  grid-template-columns: 3fr 1fr 1.4fr;
+  .cupcake-left-wrap {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+}
+
+
+
+
 // media
 
 @media(max-width: 1200px) {
@@ -532,8 +543,16 @@ h4 {
       grid-row: 4/100;
     }
   }
+  .individual-form {
+    grid-template-columns: 1fr 1fr;
+    .cupcake-left-wrap {
+      grid-column: 1/-1;
+      //grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
 
+  }
 }
+
 
 @media(max-width: 768px) {
   .footer-form {
