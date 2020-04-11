@@ -5,10 +5,9 @@ $(function() {
   // hrefs.addEventListener('click', function() {
   //   event.preventDefault();
   // });
-  /*$('a').addEventListener("click", function(event) {
-
-    event.preventDefault();
-  }, false);*/
+  $('a').on('click', function (e) {
+    e.preventDefault();
+  })
 });
 
 
