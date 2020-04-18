@@ -24,6 +24,8 @@ let cosmosCake = {
     this.iputValFunc();
 
     this.chooseFormFunc();
+
+    this.footerButtonSlider();
   },
   hamburgerInitFunc() {
     $('.hamburger').on('click', function () {
@@ -76,5 +78,43 @@ let cosmosCake = {
     $('.footer-form-list>.individual').on('click', function() {
       $('.individual-form').addClass('open').siblings(this).removeClass('open');
     });
+  },
+  footerButtonSlider() {
+    $('.next').click(function () {
+      var currentBtn = $('.footer-form-item.active'),
+        currentBtnIndex = $('.footer-form-item.active').index(),
+        nextBtnIndex = currentBtnIndex + 1,
+        nextBtn = $('.footer-form-item').eq(nextBtnIndex);
+      // currentBtn.fadeOut(0);
+      currentBtn.removeClass('active');
+
+      if(nextBtnIndex == ($('.footer-form-item:last').index()+1)) {
+        // $('.footer-form-item').eq(0).fadeIn(0);
+        $('.footer-form-item').eq(0).addClass('active').click();
+      }else{
+        // nextBtn.fadeIn(0);
+        nextBtn.addClass('active').click();
+      }
+    });
+    $('.prev').click(function () {
+      var currentBtn = $('.footer-form-item.active'),
+        currentBtnIndex = $('.footer-form-item.active').index(),
+        prevBtnIndex = currentBtnIndex - 1,
+        prevBtn = $('.footer-form-item').eq(prevBtnIndex);
+      // currentBtn.fadeOut(0);
+      currentBtn.removeClass('active');
+      // prevBtn.delay(0).fadeIn(0);
+      prevBtn.addClass('active').click();
+    })
   }
+
 }.init();
+
+$(document).ready(function () {
+
+});
+/*
+
+w: 150px;
+sumW:
+* */

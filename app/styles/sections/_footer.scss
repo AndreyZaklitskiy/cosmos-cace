@@ -105,11 +105,13 @@ footer {
 }
 //список форм
 .footer-form-list {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   li {
     display: block;
     margin-right: 35px;
@@ -129,18 +131,50 @@ footer {
     }
   }
   li.active {
+    display: block;
     a {
       border: 2px solid #fd7dd7;
     }
+  }
+  button {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    //border: 5px solid $purple;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    z-index: 5;
+    i {
+      font-size: 16px;
+      color: #544759;
+      transition: all .5s;
+    }
+    &:hover, &:active {
+      i {
+        font-size: 22px;
+      }
+    }
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
   }
 }
 // обёртка для всех форм футера
 .footer-form-wrap {
   padding: 35px 15px 30px;
 }
+
 ul li {
   padding: 4px 0;
 }
+
 // стилизация input type radio
 input[type="radio"] {
   display: none;
@@ -392,10 +426,22 @@ h4 {
     }
   }
 }
+
 @media(max-width: 992px) {
   footer {
     .contacts {
       display: none;
+    }
+  }
+  //Стили для слайдера кнопок
+  .footer-form-list {
+    width: 300px;
+    li {
+      margin-right: 0;
+      display: none;
+    }
+    button {
+      display: flex;
     }
   }
   .footer-form {
@@ -434,6 +480,7 @@ h4 {
     }
   }
 }
+
 @media(max-width: 768px) {
   .footer-form {
     grid-template-columns: 1fr;
@@ -452,7 +499,20 @@ h4 {
   .footer-form-quantity {
     width: auto;
   }
+  //стили для слайдера кнопок
+  .footer-form-block {
+    margin-top: -100px;
+    text-align: center;
+    menu {
+      padding: 10px 0 22px;
+      flex-direction: column;
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
+
 @media (max-width: 380px) {
   .footer-form-add-image {
     button {
