@@ -22,7 +22,7 @@
     width: 83px;
     height: 73px;
     z-index: 3;
-    animation: ufo-animation 5s infinite ease;
+    animation: ufo-animation 8s infinite linear;
   }
   }
 
@@ -110,10 +110,18 @@
   .gallery {
     @extend .view-buttons;
     bottom: 135px;
+    transition: .5s;
   }
   .insta-gallery {
     @extend .view-buttons;
     bottom: 57px;
+    transition: .5s;
+  }
+  .gallery, .insta-gallery {
+    &:hover {
+
+      background-color: $grey;
+    }
   }
   &:nth-child(1) {
     width: 270px;
@@ -139,15 +147,15 @@
 
 @keyframes ufo-animation {
   from {
-    right: 70%;
+    right: 65%;
     background-image: url(../../images/ufo.png);
   }
   50% {
-    right: 30%;
-    background-image: url(../../images/ufo-left.png);
+    right: 25%;
   }
   to {
-    right: 70%;
+    right: 65%;
+    background-image: url(../../images/ufo-left.png);
   }
 }
 
