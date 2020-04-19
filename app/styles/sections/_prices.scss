@@ -14,17 +14,18 @@
   &:after {
     @extend .bafter;
     bottom: -80px;
-    right: 50%;
+    right: 70%;
     transform: translate(50%, -50%);
-    background-image: url(../../images/about/ufo.png);
+    background-image: url(../../images/ufo.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 83px;
     height: 73px;
     z-index: 3;
+    animation: ufo-animation 5s infinite ease;
   }
   }
- 
+
 }
 
 .cake-prices {
@@ -135,6 +136,20 @@
 }
 
 
+
+@keyframes ufo-animation {
+  from {
+    right: 70%;
+    background-image: url(../../images/ufo.png);
+  }
+  50% {
+    right: 30%;
+    background-image: url(../../images/ufo-left.png);
+  }
+  to {
+    right: 70%;
+  }
+}
 
 
 @media (max-width: 1200px) {
