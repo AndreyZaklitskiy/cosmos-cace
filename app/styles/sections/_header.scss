@@ -9,9 +9,11 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../../images/space-environment.png) no-repeat;
-    -webkit-background-size: 100%;
-    background-size: 100%;
+    background: url(../../images/space-environment.png) repeat-x;
+    -webkit-background-size: cover;
+    background-size: cover;
+    animation: flicker 2s infinite ease;
+
   }
 }
 
@@ -75,7 +77,6 @@ header {
       display: inline-block;
       height: 90px;
       line-height: 90px;
-
     }
     &:last-child {
       margin-right: 0;
@@ -114,7 +115,7 @@ header {
   .contacts-list {
     margin-top: 150px;
   }
-  
+
   .content {
     @extend .offset-1, .col-md-6, .col-10;
     margin-top: 150px;
@@ -145,6 +146,17 @@ header {
 
 
 
+//keyframes
+@keyframes flicker {
+  from {background: url(../../images/space-environment.png) repeat-x}
+  20% {background: url(../../images/space-environment_light.png) repeat-x}
+  30% {background: url(../../images/space-environment.png) repeat-x}
+  to {background: url(../../images/space-environment_light.png) repeat-x}
+}
+
+
+
+
 
 //media
 @media (max-width: 1200px) {
@@ -170,7 +182,7 @@ header {
     }
   }
   }
-  
+
 }
 
 
