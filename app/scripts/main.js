@@ -111,9 +111,29 @@ let cosmosCake = {
 }.init();
 
 $(document).ready(function () {
-  $('.about-item>img').click(function (e) {
-    console.log('+');
+  // $('.about-item').each('img')
+  let img = $('.about-item>img');
+  img.mouseover(function (e) {
+    let attr = $(this).attr('src');
+    let attrCut = attr.substring(0, attr.length - 4);
+    let hover = '_hover.png';
+    $(this).attr('src', attrCut+hover);
+    console.log(attr.substring(0, attr.length - 3));
+    let txt = [];
+    let text = $(this).siblings('p').text();
+    let massiv = text.split('"', length);
+    console.log(massiv);
+  });
+  img.mouseleave(function (e) {
+    let attr = $(this).attr('src');
+    let attrCut = attr.substring(0, attr.length - 10);
+    let png = '.png';
+    $(this).attr('src', attrCut+png);
   })
+
+  let txt = [];
+  $('.about-item p').text();
+  console.log(txt);
 });
 /*
 
