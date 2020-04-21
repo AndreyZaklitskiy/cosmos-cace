@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4a2957cc-0782-4495-b08c-a12ffd914290" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sections/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/about/cosmonaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/about/creative-cyclop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/about/head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/about/morty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/about/rick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/about/robot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sections/_about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_about-us.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/sections/_prices.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_prices.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +71,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cosmoscake" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -190,6 +196,7 @@
       <workItem from="1587205937185" duration="16066000" />
       <workItem from="1587283880194" duration="3837000" />
       <workItem from="1587321802159" duration="1841000" />
+      <workItem from="1587477191339" duration="7379000" />
     </task>
     <servers />
   </component>
@@ -217,22 +224,26 @@
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="232" y="156" key="#Deployment/0.0.1280.994@0.0.1280.994" timestamp="1585672432615" />
-    <state width="1237" height="190" key="GridCell.Tab.0.bottom" timestamp="1587283901133">
+    <state x="420" y="253" key="FileChooserDialogImpl" timestamp="1587484542574">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.bottom/0.0.1280.994@0.0.1280.994" timestamp="1587283901133" />
-    <state width="1237" height="190" key="GridCell.Tab.0.center" timestamp="1587283901132">
+    <state x="420" y="253" key="FileChooserDialogImpl/0.0.1280.994@0.0.1280.994" timestamp="1587484542574" />
+    <state width="1237" height="190" key="GridCell.Tab.0.bottom" timestamp="1587484636532">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.center/0.0.1280.994@0.0.1280.994" timestamp="1587283901132" />
-    <state width="1237" height="190" key="GridCell.Tab.0.left" timestamp="1587283901131">
+    <state width="1237" height="190" key="GridCell.Tab.0.bottom/0.0.1280.994@0.0.1280.994" timestamp="1587484636532" />
+    <state width="1237" height="190" key="GridCell.Tab.0.center" timestamp="1587484636531">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.left/0.0.1280.994@0.0.1280.994" timestamp="1587283901131" />
-    <state width="1237" height="190" key="GridCell.Tab.0.right" timestamp="1587283901132">
+    <state width="1237" height="190" key="GridCell.Tab.0.center/0.0.1280.994@0.0.1280.994" timestamp="1587484636531" />
+    <state width="1237" height="190" key="GridCell.Tab.0.left" timestamp="1587484636531">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.right/0.0.1280.994@0.0.1280.994" timestamp="1587283901132" />
+    <state width="1237" height="190" key="GridCell.Tab.0.left/0.0.1280.994@0.0.1280.994" timestamp="1587484636531" />
+    <state width="1237" height="190" key="GridCell.Tab.0.right" timestamp="1587484636531">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state width="1237" height="190" key="GridCell.Tab.0.right/0.0.1280.994@0.0.1280.994" timestamp="1587484636531" />
     <state x="296" y="229" key="run.anything.popup" timestamp="1586199783411">
       <screen x="0" y="0" width="1280" height="994" />
     </state>

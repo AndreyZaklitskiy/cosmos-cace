@@ -10,9 +10,9 @@
     .row {
       height: 100%;
     }
-    
+
     }
-    &::before {
+    &::after {
       content: '';
       display: block;
       width: 100%;
@@ -65,6 +65,8 @@
   background-size: auto;
   background-position : center;
   position: absolute;
+  z-index: 6;
+  cursor: pointer;
 }
 
 // стили айтемов
@@ -80,95 +82,100 @@
     width: 230px;
     display: inline-block;
     color: $white;
-    
+    min-height: 40px;
+    z-index: 5;
   }
 
-  &:nth-child(1),
+  /*&:nth-child(1),
   &:nth-child(2),
   &:nth-child(3),
   &:nth-child(4),
   &:nth-child(5),
   &:nth-child(6) {
     p {
-      &::before {
+      &::after {
         @extend .before-stiles;
         background-image: url(../../images/about/creative-cyclop.png);
-        
+
       }
     }
-  }
+  }*/
   &:nth-child(1),&:nth-child(3), &:nth-child(5) {
     padding-right: 65px;
     p {
       margin-left: auto;
-      margin-right: 115px;
-      &::before {
+
+      //margin-right: 40px;
+
+      /*&::after {
         right: -90px;
         top: -25px;
-      }
+      }*/
     }
   }
   &:nth-child(2),&:nth-child(4), &:nth-child(6) {
-    padding-left: 65px;
+    padding-left: 40px;
+
+  }
     p {
       margin-right: auto;
-      margin-left: 115px;
-      &::before {
+      margin-left: 25px;
+      /*&::after {
         left: -100px;
         top: -25px;
-      }
-    }
+      }*/
+    //}
   }
-  
+
   &:nth-child(1){
     p {
-      &::before {
+      &::after {
         background-image: url(../../images/about/creative-cyclop.png);
       }
     }
   }
   &:nth-child(2) {
     p {
-      &::before {
+      &::after {
         background-image: url(../../images/about/head.png);
       }
     }
   }
   &:nth-child(3) {
     padding-right: 135px;
-    p {
-      &::before {
+    /*p {
+      &::after {
         background-image: url(../../images/about/morty.png);
       }
-    }
+    }*/
   }
   &:nth-child(4) {
-    padding-left: 135px;
-    
-    p {
-      &::before {
+    padding-left: 120px;
+
+    /*p {
+      &::after {
         background-image: url(../../images/about/robot.png);
       }
-    }
+    }*/
   }
-  &:nth-child(5) {
-    
+  /*&:nth-child(5) {
+
     p {
-      &::before {
+      &::after {
         background-image: url(../../images/about/rick.png);
       }
     }
   }
   &:nth-child(6) {
     p {
-      &::before {
+      &::after {
         background-image: url(../../images/about/cosmonaut.png);
       }
     }
-  }
+  }*/
   // &:nth-child(5) {
   //   p {
-  //     &::before {
+  //     &::after {
   //       @extend .before-stiles;
   //       background-image: url(../../images/about/head.png);        right: -90px;
   //       top: -25px;
@@ -178,7 +185,7 @@
   // }
 //   &:nth-child(1):before {
 //       @extend .before-stiles;
-      
+
 //   }
 //   &:nth-child(2):before {
 //     @extend .before-stiles;
@@ -187,51 +194,51 @@
 // &:nth-child(3):before {
 //   @extend .before-stiles;
 //   background-image: url(../../images/about/morty.png);
-  
+
 //   right: 125px;
 // }
 // &:nth-child(4):before {
 //   @extend .before-stiles;
-  
+
 //   background-image: url(../../images/about/robot.png);
-  
+
 //   left: 115px;
 // }
 //   &:nth-child(5):before {
 //     @extend .before-stiles;
 //     background-image: url(../../images/about/rick.png);
-    
+
 // }
 //   &:nth-child(6):before {
 //     @extend .before-stiles;
 //     background-image: url(../../images/about/cosmonaut.png);
 // }
 // &:nth-child(1), &:nth-child(5) {
-//   &::before {
+//   &::after {
 //     right: 60px;
 //   }
 // }
 // &:nth-child(2), &:nth-child(6) {
-//   &::before {
+//   &::after {
 //     left: 60px;
 //   }
 // }
   // &:nth-child(1),&:nth-child(3), &:nth-child(5) {
-    
-    
+
+
   // }
   // &:nth-child(2),&:nth-child(4), &:nth-child(6) {
-    
+
   //   p {
   //     margin-right: auto;
   //     margin-left: 115px;
   //   }
   // }
   // &:nth-child(3)  {
-    
+
   // }
   // &:nth-child(4) {
-    
+
   // }
 }
 
@@ -240,7 +247,7 @@
 
 // media
 @media (max-width: 1200px) {
-  .about-item {
+  /*.about-item {
     &:nth-child(1),&:nth-child(3), &:nth-child(5) {
       p {
         margin-right: 70px;
@@ -251,7 +258,7 @@
         margin-left: 70px;
       }
   }
-}
+}*/
 }
 
 @media (max-width: 992px) {
@@ -280,7 +287,7 @@
     &:nth-child(5),
     &:nth-child(6) {
       p {
-        &::before {
+        &::after {
           //  width: 60px;
           //  height: 60px;
           background-size: cover;
@@ -289,21 +296,21 @@
     }
     &:nth-child(1),&:nth-child(3), &:nth-child(5) {
       padding-right: 40px;
-      p {
-        &::before {
+      /*p {
+        &::after{
           right: -70px;
           top: -15px;
         }
-      }
+      }*/
     }
     &:nth-child(2),&:nth-child(4), &:nth-child(6) {
       padding-left: 40px;
-      p {
-        &::before {
+      /*p {
+        &::after {
           left: -80px;
           top: -15px;
         }
-      }
+      }*/
     }
     &:nth-child(3)  {
       padding-right: 90px;
@@ -313,56 +320,55 @@
     }
     // адаптивные размеры иконок
     &:nth-child(1) {
-      p {
-        &::before {
+      img {
+
           width: 63px;
           height: 61px;
-      }
+
       }
     }
     &:nth-child(2) {
-      p {
-        &::before {
+      img {
+
           width: 61px;
           height: 60px;
+
       }
-      }
-      
+
     }
     &:nth-child(3) {
-      p {
-        &::before {
+      img {
+
           width: 60px;
           height: 69px;
+
       }
-      }
-      
+
     }
     &:nth-child(4) {
-      p {
-        &::before {
+      img {
+
           width: 60px;
           height: 73px;
+
       }
-      }
-      
+
     }
     &:nth-child(5) {
-      p {
-        &::before {
+      img {
+
           width: 64px;
           height: 62px;
-      }
+
       }
     }
     &:nth-child(6) {
-      p {
-        &::before {
+      img {
           width: 62px;
           height: 60px;
+
       }
-      }
-      
+
     }
   }
 }
@@ -380,6 +386,12 @@
      }
      &:nth-child(4) {
       padding-left: 40px;
+    }
+    &:nth-child(1),&:nth-child(3),&:nth-child(6) {
+      p {
+        margin-left: auto;
+        margin-right: 25px;
+      }
     }
   }
 }

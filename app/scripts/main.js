@@ -111,7 +111,9 @@ let cosmosCake = {
 }.init();
 
 $(document).ready(function () {
-
+  $('.about-item>img').click(function (e) {
+    console.log('+');
+  })
 });
 /*
 
