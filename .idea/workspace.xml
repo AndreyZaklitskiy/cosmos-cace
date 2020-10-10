@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4a2957cc-0782-4495-b08c-a12ffd914290" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/violet-elips.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/violet-elips.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/scripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/sections/_about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_about-us.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sections/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sections/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sections/_insta-g.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_insta-g.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/sections/_prices.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/sections/_prices.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +70,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cosmoscake" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Рабочий стол/paradigma" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -189,7 +195,22 @@
       <workItem from="1587205937185" duration="16066000" />
       <workItem from="1587283880194" duration="3837000" />
       <workItem from="1587321802159" duration="1841000" />
-      <workItem from="1587477191339" duration="16178000" />
+      <workItem from="1587477191339" duration="17314000" />
+      <workItem from="1587660294770" duration="364000" />
+      <workItem from="1587663292832" duration="477000" />
+      <workItem from="1587745936810" duration="6805000" />
+      <workItem from="1588087940452" duration="1979000" />
+      <workItem from="1594837398815" duration="3340000" />
+      <workItem from="1595063681132" duration="1196000" />
+      <workItem from="1597863430899" duration="3342000" />
+      <workItem from="1598805683566" duration="466000" />
+      <workItem from="1599061019113" duration="423000" />
+      <workItem from="1599572853821" duration="1198000" />
+      <workItem from="1601155254398" duration="376000" />
+      <workItem from="1601997722087" duration="1489000" />
+      <workItem from="1602087858697" duration="1012000" />
+      <workItem from="1602176566615" duration="598000" />
+      <workItem from="1602337935896" duration="6195000" />
     </task>
     <servers />
   </component>
@@ -213,37 +234,29 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="232" y="156" key="#Deployment" timestamp="1585672432615">
-      <screen x="0" y="0" width="1280" height="994" />
+    <state x="630" y="267" key="FileChooserDialogImpl" timestamp="1595063971198">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="232" y="156" key="#Deployment/0.0.1280.994@0.0.1280.994" timestamp="1585672432615" />
-    <state x="420" y="253" key="FileChooserDialogImpl" timestamp="1587484542574">
-      <screen x="0" y="0" width="1280" height="994" />
+    <state x="630" y="267" key="FileChooserDialogImpl/0.0.1920.1050/-1024.165.1024.738@0.0.1920.1050" timestamp="1595063971198" />
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1602342125515">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="420" y="253" key="FileChooserDialogImpl/0.0.1280.994@0.0.1280.994" timestamp="1587484542574" />
-    <state width="1237" height="190" key="GridCell.Tab.0.bottom" timestamp="1587489598216">
-      <screen x="0" y="0" width="1280" height="994" />
+    <state width="1877" height="160" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1024.165.1024.738@0.0.1920.1050" timestamp="1602087970512" />
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602342125515" />
+    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1602342125515">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.bottom/0.0.1280.994@0.0.1280.994" timestamp="1587489598216" />
-    <state width="1237" height="190" key="GridCell.Tab.0.center" timestamp="1587489598216">
-      <screen x="0" y="0" width="1280" height="994" />
+    <state width="1877" height="160" key="GridCell.Tab.0.center/0.0.1920.1050/-1024.165.1024.738@0.0.1920.1050" timestamp="1602087970511" />
+    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602342125515" />
+    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1602342125514">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.center/0.0.1280.994@0.0.1280.994" timestamp="1587489598216" />
-    <state width="1237" height="190" key="GridCell.Tab.0.left" timestamp="1587489598216">
-      <screen x="0" y="0" width="1280" height="994" />
+    <state width="1877" height="160" key="GridCell.Tab.0.left/0.0.1920.1050/-1024.165.1024.738@0.0.1920.1050" timestamp="1602087970510" />
+    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602342125514" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1602342125515">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.left/0.0.1280.994@0.0.1280.994" timestamp="1587489598216" />
-    <state width="1237" height="190" key="GridCell.Tab.0.right" timestamp="1587489598216">
-      <screen x="0" y="0" width="1280" height="994" />
-    </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.right/0.0.1280.994@0.0.1280.994" timestamp="1587489598216" />
-    <state x="296" y="229" key="run.anything.popup" timestamp="1587493304212">
-      <screen x="0" y="0" width="1280" height="994" />
-    </state>
-    <state x="296" y="229" key="run.anything.popup/0.0.1280.994@0.0.1280.994" timestamp="1587493304212" />
-    <state x="303" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1587235662615">
-      <screen x="0" y="0" width="1280" height="994" />
-    </state>
-    <state x="303" y="213" width="672" height="678" key="search.everywhere.popup/0.0.1280.994@0.0.1280.994" timestamp="1587235662615" />
+    <state width="1877" height="160" key="GridCell.Tab.0.right/0.0.1920.1050/-1024.165.1024.738@0.0.1920.1050" timestamp="1602087970511" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602342125515" />
   </component>
 </project>

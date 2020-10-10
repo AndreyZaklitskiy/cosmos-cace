@@ -9,7 +9,7 @@
       background-image: url(../../images/violet-elips.png);
       height: 125px;
       width: 95%;
-      top: 0;
+      top: -1px;
     }
     &:after {
       @extend .bafter;
@@ -131,14 +131,33 @@
 
 
 //media
+@media (max-width: 1200px) {
+  .insta-g .container:after {
+    top: 64px;
+  }
+}
 
 @media (max-width: 992px) {
   .insta-g {
     .container {
       padding-top: 100px;
+      &:after {
+        top: 39px;
+      }
     }
     }
 }
+@media (max-width: 768px) {
+  .insta-g .container:after {
+    top: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .insta-g .container:after {
+    z-index: -2;
+  }
+}
+
 
 @media (max-width : 400px) {
   .gallery- {
@@ -150,7 +169,7 @@
         }
         &>.gallery-col {
           order: 1;
-          
+
         }
      }
       &::before {
@@ -174,5 +193,6 @@
 @media (max-width : 320px) {
   .insta-g .container::after {
     top: -4px;
+    z-index: 3;
   }
 }

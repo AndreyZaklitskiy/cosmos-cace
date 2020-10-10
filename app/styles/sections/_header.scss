@@ -11,7 +11,7 @@ header {
     bottom: 0;
     background: url(../../images/space-environment.png) repeat-x;
     background-size: 100%;
-    animation: flicker 3s infinite linear;
+    animation: flicker 1s infinite linear;
 
   }
 }
@@ -147,12 +147,10 @@ header {
 
 //keyframes
 @keyframes flicker {
-  from {background: url(../../images/space-environment.png) repeat-x center}
-  25% {background: url(../../images/space-environment_light.png) repeat-x center}
-  30% {background: url(../../images/space-environment.png) repeat-x center}
-  65% {background: url(../../images/space-environment_light.png) repeat-x center}
-  80% {background: url(../../images/space-environment.png) repeat-x center}
-  to {background: url(../../images/space-environment_light.png) repeat-x center}
+  0% {background: url(../../images/space-environment.png) repeat-x center}
+  50% {background: url(../../images/space-environment_light.png) repeat-x center}
+
+  100% {background: url(../../images/space-environment.png) repeat-x center}
 }
 
 

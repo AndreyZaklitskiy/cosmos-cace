@@ -8,7 +8,8 @@ $(function() {
   $('a').on('click', function (e) {
     e.preventDefault();
   })
-});
+
+
 
 
 let cosmosCake = {
@@ -17,11 +18,13 @@ let cosmosCake = {
     // hamburger init function
     this.hamburgerInitFunc();
 
+    this.aboutTextTiping();
+
     // swiper init function
     this.swiperInitFunc();
 
     // footer input val function
-    this.iputValFunc();
+    this.inputValFunc();
 
     this.chooseFormFunc();
 
@@ -33,6 +36,60 @@ let cosmosCake = {
       $('.header-menu_nav').slideToggle().toggleClass('is-active-menu');
     });
   },
+
+  aboutTextTiping() {
+
+    /*let img = $('.about-item').children('img');
+
+
+    img.mouseover(function (e) {
+      let attr = $(this).attr('src');
+      let attrCut = attr.substring(0, attr.length - 4);
+      let hover = '_hover.png';
+      $(this).attr('src', attrCut+hover);
+      // console.log(attr.substring(0, attr.length - 3));
+      $(this).siblings('p')
+    });
+    img.mouseleave(function (e) {
+      let attr = $(this).attr('src');
+      let attrCut = attr.substring(0, attr.length - 10);
+      let png = '.png';
+      $(this).attr('src', attrCut+png);
+    });*/
+
+
+    new TypeIt(".about-item-text_1", {
+      // strings: "",
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+    new TypeIt(".about-item-text_2", {
+      // strings: "Мы за креативный и нестандартный подход!",
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+    new TypeIt(".about-item-text_3", {
+      // strings: "Мы за креативный и нестандартный подход!",
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+    new TypeIt(".about-item-text_4", {
+      // strings: "Мы за креативный и нестандартный подход!",
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+    new TypeIt(".about-item-text_5", {
+      // strings: "Мы за креативный и нестандартный подход!",
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+    new TypeIt(".about-item-text_6", {
+      strings: "Мы за креативный и нестандартный подход!",
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+  },
+
   swiperInitFunc() {
     new Swiper ('.swiper-container', {
       loop: true,
@@ -56,7 +113,7 @@ let cosmosCake = {
       }
     })
   },
-  iputValFunc() {
+  inputValFunc() {
     $('.input-range').on('input', function(){
       $('.input-text').val(this.value);
     });
@@ -108,35 +165,10 @@ let cosmosCake = {
     })
   }
 
+
 }.init();
 
-$(document).ready(function () {
-  // $('.about-item').each('img')
-  let img = $('.about-item>img');
-  img.mouseover(function (e) {
-    let attr = $(this).attr('src');
-    let attrCut = attr.substring(0, attr.length - 4);
-    let hover = '_hover.png';
-    $(this).attr('src', attrCut+hover);
-    console.log(attr.substring(0, attr.length - 3));
-    let txt = [];
-    let text = $(this).siblings('p').text();
-    let massiv = text.split('"', length);
-    console.log(massiv);
-  });
-  img.mouseleave(function (e) {
-    let attr = $(this).attr('src');
-    let attrCut = attr.substring(0, attr.length - 10);
-    let png = '.png';
-    $(this).attr('src', attrCut+png);
-  })
 
-  let txt = [];
-  $('.about-item p').text();
-  console.log(txt);
+
 });
-/*
 
-w: 150px;
-sumW:
-* */

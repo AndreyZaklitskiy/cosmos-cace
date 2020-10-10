@@ -9,7 +9,7 @@
     background-image: url(../../images/white-elips.png);
     height: 106px;
     width: 100%;
-    bottom: -106px;
+    bottom: -105px;
   }
   &:after {
     @extend .bafter;
@@ -146,14 +146,19 @@
 
 
 @keyframes ufo-animation {
-  from {
+  0% {
     right: 65%;
+    background-image: url(../../images/ufo.png);
+  }
+  49% {
+    right: 25%;
     background-image: url(../../images/ufo.png);
   }
   50% {
     right: 25%;
+    background-image: url(../../images/ufo-left.png);
   }
-  to {
+  100% {
     right: 65%;
     background-image: url(../../images/ufo-left.png);
   }

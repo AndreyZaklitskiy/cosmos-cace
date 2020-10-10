@@ -1,9 +1,23 @@
 footer {
   position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
   .container {
-    -webkit-background-size: cover;
-    background-size: cover;
-    padding-bottom: 100px;
+
+    padding-bottom: 80px;
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -20px;
+    background: url(../../images/footer-clouds.png) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    max-height: 240px;
+    z-index: 0;
   }
 }
 //стилизация айтемов формы
@@ -416,7 +430,59 @@ h4 {
 }
 
 
+.footer__phone {
+  display: flex;
+  justify-content: center;
+  padding: 34px 0 30px;
+  width: 100%;
+  box-shadow: 5px 5px 13px 0px rgba(#010101, .22);
+  margin-bottom: 55px;
+  position: relative;
+  z-index: 2;
+  a {
+    font-family: $robotobold;
+    font-size: 42px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+}
 
+footer .footer__bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+  z-index: 2;
+}
+.footer__studio {
+  h5 {
+    display: inline-block;
+    font-family: $robotobold;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6e5b8f;
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  p {
+    display: inline-block;
+    font-family: $robotoregular;
+    font-size: 14px;
+    color: #6e5b8f;
+  }
+
+}
+.footer__rights {
+  p {
+    font-family: $robotoregular;
+    font-size: 14px;
+    color: #6e5b8f;
+    text-transform: capitalize;
+  }
+}
 
 // media
 @media(max-width: 1200px) {
@@ -526,5 +592,15 @@ h4 {
         width: 100%;
       }
     }
+  }
+  .footer__phone {
+    padding: 20px 0 20px;
+    a {
+      font-size: 27px;
+    }
+  }
+  .footer__studio {
+    text-align: center;
+    margin-bottom: 5px;
   }
 }
