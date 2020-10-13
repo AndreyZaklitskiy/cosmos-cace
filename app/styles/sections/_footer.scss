@@ -210,6 +210,7 @@ label.radio {
     padding-left: 30px;
     width: auto;
     white-space: pre;
+    cursor: pointer;
   }
 }
 input[type="radio"]:checked + label.radio {
@@ -371,7 +372,31 @@ h4 {
     box-shadow: 0px 6px 5.76px 0.24px rgba(1, 1, 1, 0.16);
     margin-right: 17px;
   }
+  input._choose-btn {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    &:focus + label {
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+  }
+  label._choose-btn {
+    display: inline-block;
+    cursor: pointer;
+  }
 }
+//  FIREFOX bugfix
+input._choose-btn:focus + label,
+input._choose-btn.has-focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+
 .footer-form-center-wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

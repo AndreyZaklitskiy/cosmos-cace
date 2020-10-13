@@ -111,7 +111,7 @@ function html() {
 
 function images() {
   return src('app/images/**/*', { since: lastRun(images) })
-    .pipe($.imagemin())
+    // .pipe($.imagemin())
     .pipe(dest('dist/images'));
 };
 

@@ -7,10 +7,7 @@ $(function() {
   // });
   $('a').on('click', function (e) {
     e.preventDefault();
-  })
-
-
-
+  });
 
 let cosmosCake = {
   init() {
@@ -29,6 +26,8 @@ let cosmosCake = {
     this.chooseFormFunc();
 
     this.footerButtonSlider();
+
+    this.chooseBtnFunc();
   },
   hamburgerInitFunc() {
     $('.hamburger').on('click', function () {
@@ -58,33 +57,33 @@ let cosmosCake = {
     });*/
 
 
-    new TypeIt(".about-item-text_1", {
+    new TypeIt('.about-item-text_1', {
       // strings: "",
       speed: 75,
       waitUntilVisible: true
     }).go();
-    new TypeIt(".about-item-text_2", {
+    new TypeIt('.about-item-text_2', {
       // strings: "Мы за креативный и нестандартный подход!",
       speed: 75,
       waitUntilVisible: true
     }).go();
-    new TypeIt(".about-item-text_3", {
+    new TypeIt('.about-item-text_3', {
       // strings: "Мы за креативный и нестандартный подход!",
       speed: 75,
       waitUntilVisible: true
     }).go();
-    new TypeIt(".about-item-text_4", {
+    new TypeIt('.about-item-text_4', {
       // strings: "Мы за креативный и нестандартный подход!",
       speed: 75,
       waitUntilVisible: true
     }).go();
-    new TypeIt(".about-item-text_5", {
+    new TypeIt('.about-item-text_5', {
       // strings: "Мы за креативный и нестандартный подход!",
       speed: 75,
       waitUntilVisible: true
     }).go();
-    new TypeIt(".about-item-text_6", {
-      strings: "Мы за креативный и нестандартный подход!",
+    new TypeIt('.about-item-text_6', {
+      // strings: 'Мы за креативный и нестандартный подход!',
       speed: 75,
       waitUntilVisible: true
     }).go();
@@ -163,12 +162,31 @@ let cosmosCake = {
       // prevBtn.delay(0).fadeIn(0);
       prevBtn.addClass('active').click();
     })
+  },
+
+
+  chooseBtnFunc() {
+    var inputs = document.querySelectorAll('.choose-btn');
+    Array.prototype.forEach.call(inputs, function(input){
+      var label	 = input.nextElementSibling,
+        labelVal = label.innerHTML;
+      input.addEventListener('change', function(e){
+        var fileName = '';
+        if( this.files && this.files.length > 1 )
+          fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+        else
+          fileName = e.target.value.split('').pop();
+        if( fileName )
+          label.querySelector( 'span' ).innerHTML = fileName;
+        else
+          label.innerHTML = labelVal;
+      });
+    });
+    document.querySelectorAll('.choose-btn').addEventListener('focus', function(){ input.classList.add( 'has-focus' ); });
+
   }
 
-
 }.init();
-
-
 
 });
 
